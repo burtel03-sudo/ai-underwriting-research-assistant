@@ -2,6 +2,17 @@
 .env
 .env.*
 !.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*credentials*.json
+*secret*
+id_rsa
+id_ed25519
+.npmrc
+.pypirc
 
 # Node / Next.js
 node_modules/
@@ -27,3 +38,8 @@ Thumbs.db
 .terraform/
 *.tfstate
 *.tfstate.*
+
+# Internal business documentation — never commit (kept local-only going forward)
+*.docx
+02_BRD_AI_Underwriting_Research_Assistant.docx
+03_PRD_AI_Underwriting_Research_Assistant (1).docx
